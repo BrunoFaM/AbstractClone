@@ -10,7 +10,7 @@ function Main() {
   }, []);
 
   return (
-    <main>{datos.map(dato => <MainItem dato={dato} />)}</main>
+    <main className=" flex flex-col  items-center gap-8 pt-16 pb-16">{datos.map(dato => <MainItem key={dato.id} dato={dato} />)}</main>
   );
 }
 
