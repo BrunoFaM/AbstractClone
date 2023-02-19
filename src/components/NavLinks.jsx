@@ -1,19 +1,20 @@
+import { createElement } from "react";
 import logo from "../../public/images/logo.png";
 
 function NavLinks() {
   return (
-    <div className="flex">
-      <a href="">
-        <div className="flex">
-          <img
-            className="bg-[#fff] rounded-3xl border-white border mb-5 -ml-1"
-            src={logo}
-            alt="oficial logo"
-          />
-          <p className="top">Abstract</p>
-        </div>
+    <div className="flex text-2xl pl-5">
+      <a title="Go to abstract.com" href="https://www.abstract.com/" className="mr-2 font-bold hover:text-gray-300 peer">
+        Abstract
       </a>
-      <a href="">Help Center</a>
+      |
+      <a
+        title="Home"
+        href=""
+        className="ml-2 font-semibold hover:underline peer"
+      >
+        Help Center
+      </a>
     </div>
   );
 }
