@@ -5,7 +5,7 @@ function Footer() {
   return (
     <>
       <footer className="bg-[#000000] text-[#fff]  pt-8 pb-8">
-        <div className="gridcontainer grid grid-cols-2 sm:w-[50%] md:w-[70%]">
+        <div className="gridcontainer grid grid-cols-2 sm:w-[50%] md:w-[70%] md:ml-10 lg:grid-cols-4">
           <div className="p-3">
             <h2 className="text-2xl font-bold mb-2">Abstract</h2>
             <ul>
