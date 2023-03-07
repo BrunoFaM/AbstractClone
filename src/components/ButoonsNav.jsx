@@ -10,6 +10,15 @@ function ButoonsNav() {
   // estado que controla icono
   const [icon, setIcon] = useState(0);
   function handleClick() {
+    //controla el menu desplegable
+    const menu2 = document.querySelector("#desplegable");
+    console.log(menu2);
+    //este condicional ajusta el display del menu segun el estado del icono
+    if(icon === 0){
+      menu2.setAttribute('class', "text-white bg-black border-t flex flex-col pt-12 pb-12 lg:hidden absolute w-screen");
+    }else{
+      menu2.setAttribute('class', "text-white bg-black border-t flex flex-col pt-12 pb-12 hidden w-screen");
+    }
   }
   function handleIcon(){
     // controla es estado del icono
